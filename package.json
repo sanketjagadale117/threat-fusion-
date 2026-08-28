@@ -1,17 +1,13 @@
 {
-  "name": "cti-backend",
-  "version": "5.0.0",
+  "name": "cti-database",
+  "version": "1.0.0",
   "type": "module",
-  "description": "CTI Aggregation Platform - Express API, 13-feed ingestion, DeltaTI-inspired scoring/fetching, performance metrics, TAXII-shaped endpoints, real-time Socket.io push",
+  "description": "Mongoose models + seed script for the CTI Aggregation Platform",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "seed": "node seed/seed.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "node-cron": "^3.0.3",
-    "socket.io": "^4.7.5"
+    "mongoose": "^8.4.1"
   }
 }
